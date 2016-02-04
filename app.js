@@ -1,3 +1,5 @@
-let raid = require('./config/config');
+let config = require('./config/config');
+let RAIDController = require('./lib/RAIDController');
 
-console.log(raid);
+let controller = new RAIDController(config);
+

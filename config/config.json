@@ -1,10 +1,10 @@
 {
-  "raid": {
+  "type" : "1",
+  "settings" : {
     "name" : "RAIDberry",
-    "type" : "1",
     "disks" : {
-      "primary" : "/media/hdd1",
-      "secondary": "/media/hdd2"
+        "primary": "/media/hdd1",
+        "secondary": "/media/hdd2"
     }
   }
 }
