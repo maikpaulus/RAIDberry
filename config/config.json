@@ -3,8 +3,8 @@
   "settings" : {
     "name" : "RAIDberry",
     "disks" : {
-        "primary": "/media/hdd1",
-        "secondary": "/media/hdd2"
+        "primary": "media/hdd1",
+        "secondary": "media/hdd2"
     }
   }
 }

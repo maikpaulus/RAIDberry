@@ -1,3 +1,5 @@
+global.__base = __dirname;
+
 let config = require('./config/config');
 let RAIDController = require('./lib/RAIDController');
 

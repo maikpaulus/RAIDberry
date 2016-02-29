@@ -9,6 +9,7 @@
   "author": "Maik Paulus <mail@maikpaulus.com>",
   "license": "MIT",
   "dependencies": {
-    "chokidar": "^1.4.2"
+    "chokidar": "^1.4.2",
+    "request-promise": "^2.0.1"
   }
 }
