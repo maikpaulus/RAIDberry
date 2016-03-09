@@ -1,0 +1,7 @@
+{
+  "AD" : "AddDirectory",
+  "AF" : "AddFile",
+  "RD" : "RemoveDirectory",
+  "RF" : "RemoveFile",
+  "CF" : "ChangeFile"
+}
