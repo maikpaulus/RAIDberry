@@ -14,7 +14,7 @@ app.set('view engine', 'jade');
 app.set('views', __dirname + '/views/pages');
 
 app.get(/raidberry\/synchronize$/, function (req, res) {
-    let raid = controller.getRAID(config.type);
+    let raid = controller.getRAID();
     raid.synchronize();
     res.send('cool, synchronizing stuff!');
 });
