@@ -38,11 +38,13 @@ app.get(/raidberry\/status$/, function (req, res) {
     }
 });
 
-app.get(/raidberry\/standby\/:drive/, function (req, res) {
+app.get(/raidberry\/standby\/primary/, function (req, res) {
     let raid = controller.getRAID(config);
 
+    let drive = config.settings.mounts.primary;
+
     if (false !== raid) {
-        raid.standby(req.params.drive, function (code, stdout) {
+        raid.standby(drive, function (code, stdout) {
             res.send(stdout);
         });
     }
