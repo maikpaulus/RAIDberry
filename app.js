@@ -26,7 +26,16 @@ app.get(/raidberry\/synchronize$/, function (req, res) {
 });
 
 app.get(/raidberry\/status$/, function (req, res) {
-    res.send('ok!');
+    let raid = controller.getRAID(config);
+
+    if (false !== raid) {
+        raid.status(function (code, stdout) {
+            res.send(stdout);
+        });
+    }
+    else {
+        res.send('no status available!');
+    }
 });
 
 app.get('*', function (req, res) {
