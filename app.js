@@ -38,6 +38,19 @@ app.get(/raidberry\/status$/, function (req, res) {
     }
 });
 
+app.get(/raidberry\/standby\/:drive/, function (req, res) {
+    let raid = controller.getRAID(config);
+
+    if (false !== raid) {
+        raid.standby(req.params.drive, function (code, stdout) {
+            res.send(stdout);
+        });
+    }
+    else {
+        res.send('could not send drives to standby!');
+    }
+});
+
 app.get('*', function (req, res) {
     res.send('hey, world');
 });
