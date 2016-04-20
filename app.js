@@ -38,7 +38,7 @@ app.get(/raidberry\/status$/, function (req, res) {
     }
 });
 
-app.get(/raidberry\/standby\/primary/, function (req, res) {
+app.get(/raidberry\/standby\/primary$/, function (req, res) {
     let raid = controller.getRAID(config);
 
     let drive = config.settings.mounts.primary;
