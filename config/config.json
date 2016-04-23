@@ -5,10 +5,6 @@
     "disks" : {
         "primary": "media/hdd1",
         "secondary": "media/hdd2"
-    },
-    "mounts" : {
-      "primary": "/dev/sdb",
-      "secondary": "/dev/sdb"
     }
   }
 }
